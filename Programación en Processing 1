@@ -1,0 +1,29 @@
+void setup() {
+  size(600, 600); // Crear un lienzo de tamaño 600x600
+  background(179, 157, 255); // Establecer un fondo de color lila
+  
+  fill(152, 15, 18); // Establecer color de relleno para las figuras (rojo oscuro)
+  stroke(255, 50, 50); // Establecer color de contorno para las figuras (rojo claro)
+  strokeWeight(2); // Establecer grosor del contorno
+  
+  // Dibujar un cuadrado
+  rect(100, 100, 100, 100);
+  
+  // Dibujar un cuadrado
+  rect(400, 100, 100, 100);
+  
+  // Dibujar una elipse
+  ellipse(300, 300, 150, 150);
+  
+  // Dibujar una línea
+  line(50, 500, 550, 500);
+  
+  fill(134, 3, 3);
+  textSize(30); // Establecer tamaño de texto
+  textAlign(CENTER); // Alinear el texto al centro
+  text("¡Hola Mundo!", width/2, height-50); // Mostrar un texto en el lienzo
+}
+
+void draw() {
+ 
+}
