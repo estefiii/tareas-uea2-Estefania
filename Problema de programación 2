@@ -1,0 +1,74 @@
+PImage pato; // Variable de la imagen 
+
+int x; // Variable de movimiento
+int vx;
+
+
+void setup(){
+fullScreen(); // Pantalla completa
+pato = loadImage("C:/Users/saras/Downloads/WhatsApp Image 2024-04-26 at 10.57.47 PM.jpeg");
+
+x = 26; // Velocidad de movimiento
+vx = 60;
+
+}
+
+
+void draw() { 
+  x = x + vx; 
+  if (x > 450){ // Condición
+    vx = 2;
+  }
+  
+  if (x < 50){
+    vx = 2;
+  } 
+
+  
+  background (176,36,172);  // Establece el color de fondo
+  image(pato,50,100); //Posición de la imagen
+  
+  fill (48, 63, 159); // Establece el color de la figura
+  ellipse(x,200,400,400); // Círculo
+  
+  fill (355, 355, 355);// Establece el color del texto
+  textSize(80); // Tamaño del texto
+  text ("Museo Aurora", x, 90, 400, 400); // Texto
+
+  fill (355,355,355);
+  textSize(90);
+  text ("¡Exposición!", 1400, 540, 900, 900);
+
+  fill (10, 10, 10);
+  textSize(70);
+  text ("Encuentros en el Tiempo", 1140, 640, 1500, 1500);
+
+  fill (355,355,355);
+  textSize(70);
+  text ("Encuentros en el Tiempo", 1140, 643, 1500, 1500);
+  
+  fill (10, 10, 10);
+  textSize(60);
+  text ("De Isabella Silva", 1450, 720, 7000, 7000);
+  
+  fill (355,355,355);
+  textSize(60);
+  text ("De Isabella Silva", 1450, 723, 7000, 7000);
+  
+  fill (160, 64, 0);
+  textSize(60);
+  text ("Espacio cultural", 1450, 798, 7000, 7000);  
+  
+  fill (220, 118, 51);
+  textSize(60);
+  text ("Espacio cultural", 1450, 801, 7000, 7000);
+    
+  fill (160, 64, 0);
+  textSize(40);
+  text ("DEL 10 AL 29 DE SEPTIEMBRE DEL 2024", 1230, 900, 7000, 7000);
+  
+  fill (355,355,355);
+  textSize(40);
+  text ("DEL 10 AL 29 DE SEPTIEMBRE DEL 2024", 1230, 903, 7000, 7000);  
+  
+}
